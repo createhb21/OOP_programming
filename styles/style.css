@@ -84,19 +84,21 @@ body {
     background-color: var(--document-bg-color);
     /* Firefox */
     scrollbar-width: 6px;
+    scroll-behavior: smooth;
     scrollbar-color: var(--bg-accent-color);
-    scrollbar-face-color: var(--translucent-black);
+    scrollbar-face-color: white;
 }
 
 .document::-webkit-scrollbar {
     /* Safari and Chrome */
-    background-color: var(--bg-accent-color);
-    width: 6px;
+    background-color: var(--translucent-black-opcacity);
+    width: 8px;
 }
 
 .document::-webkit-scrollbar-thumb {
     /* Safari and Chrome */
-    background-color: var(--translucent-black);
+    border-radius: 35px;
+    background-color: rgba(87, 116, 161, 0.315);
 }
 
 .footer {
