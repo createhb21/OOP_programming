@@ -6,7 +6,7 @@
     --text-edit-bg-color: #575757;
     --border-color: #3f3f3f;
     --shadow-color: #202020;
-    --document-bg-color: #68686850;
+    --document-bg-color: rgba(83, 130, 232, 0.075);
     --component-bg-gradient: radial-gradient(circle, #646464e6 0%, #363636e6 100%);
     --smokywhite: #dddbd85e;
     --black: #000000;
@@ -54,11 +54,6 @@ body {
     background: var(--bg-main-color);
     border-bottom: 1px solid var(--bg-accent-color);
     text-align: center;
-}
-
-.banner__title {
-    margin: 20px;
-    color: var(--document-bg-color);
 }
 
 .control-panel {
