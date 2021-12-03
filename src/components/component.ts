@@ -1,7 +1,6 @@
 export interface Component {
     attachTo(parent: HTMLElement, position?: InsertPosition): void;
 }
-
 /**
  * Encapsulate the HTML element creation
  */

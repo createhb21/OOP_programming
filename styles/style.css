@@ -11,6 +11,8 @@
     --smokywhite: #dddbd85e;
     --black: #000000;
     --translucent-black: #00000099;
+    --translucent-black-opcacity: #0000003a;
+    --opacity-none: rgba(0, 0, 0, 0);
 }
 
 li {
@@ -71,9 +73,9 @@ body {
     font-weight: 600;
     font-size: 0.8rem;
     color: white;
-    background-color: var(--translucent-black);
-    border-color: var(--translucent-black);
-    border-radius: 35px;
+    background-color: var(--opacity-none);
+    border-color: var(--translucent-black-opcacity);
+    border-radius: 25px;
 }
 
 .document {
@@ -101,4 +103,8 @@ body {
     background: var(--bg-main-color);
     border-top: 1px solid var(--border-color);
     text-align: center;
+}
+
+.footer p {
+    margin: 15px 0;
 }
