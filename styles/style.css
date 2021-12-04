@@ -194,6 +194,8 @@ button {
     box-shadow: 2px 2px 6px var(--shadow-color);
     background: var(--bg-main-color);
     border-bottom: 1px solid var(--bg-accent-color);
+    border-radius: 25px;
+    overflow: hidden;
   }
   
   .page-item__controls {
@@ -251,4 +253,12 @@ button {
   .todo-label {
     padding: 1em;
     color: var(--smokywhite);
+  }
+
+
+
+  /* --- Drag and Drop --- */
+
+  .mute-children * {
+    pointer-events: none;
   }
