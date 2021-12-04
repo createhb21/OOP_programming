@@ -38,7 +38,7 @@ class App {
     );
 
     this.bindElementToDialog<TextSectionInput>(
-      '#new-video',
+      '#new-note',
       TextSectionInput,
       (input: TextSectionInput) => new ToDoComponent(input.title, input.body),
     );
