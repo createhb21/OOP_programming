@@ -1,8 +1,12 @@
+import { TextData } from '../dialog.js';
 import { BaseComponent } from './../../component.js';
 
-export class TextSectionInput extends BaseComponent<HTMLElement> {
-    constructor() {
-        super(`
+export class TextSectionInput
+  extends BaseComponent<HTMLElement>
+  implements TextData
+{
+  constructor() {
+    super(`
     <div>
       <div class="form__container">
           <label for="title">Title</label>
@@ -14,14 +18,14 @@ export class TextSectionInput extends BaseComponent<HTMLElement> {
       </div>
     </div>
     `);
-    }
+  }
 
-    get title(): string {
-        const element = this.element.querySelector('#title')! as HTMLInputElement;
-        return element.value;
-    }
-    get body(): string {
-        const element = this.element.querySelector('#body')! as HTMLInputElement;
-        return element.value;
-    }
+  get title(): string {
+    const element = this.element.querySelector('#title')! as HTMLInputElement;
+    return element.value;
+  }
+  get body(): string {
+    const element = this.element.querySelector('#body')! as HTMLInputElement;
+    return element.value;
+  }
 }
